@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7adde29d-2ff7-416c-89e8-668b5dcb7f63" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Button/button.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/button.test.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="7adde29d-2ff7-416c-89e8-668b5dcb7f63" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +23,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
   <component name="GithubPullRequestsUISettings">
     <option name="hiddenUrls">
       <set>
@@ -45,13 +45,13 @@
   <component name="ProjectId" id="2OxVpyk3bSTwIi0STNOYOdN0IRy" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TypeScript/Promise" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="D:\Code\Web\Railgun\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
@@ -141,6 +141,7 @@
       <workItem from="1682752651538" duration="52000" />
       <workItem from="1682752747059" duration="1441000" />
       <workItem from="1682754279368" duration="11013000" />
+      <workItem from="1682765491692" duration="317000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: 规范项目配置, 代码升级重构">
       <created>1682764818921</created>
@@ -156,11 +157,18 @@
       <option name="project" value="LOCAL" />
       <updated>1682764955380</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test: 测试钩子">
+      <created>1682765682349</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682765682349</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -168,17 +176,29 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="COLUMN_ORDER" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
             </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="refactor: 规范项目配置, 代码升级重构" />
     <MESSAGE value="test: 组件测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="test: 组件测试" />
+    <MESSAGE value="test: 测试钩子" />
+    <option name="LAST_COMMIT_MESSAGE" value="test: 测试钩子" />
   </component>
   <component name="WindowStateProjectService">
     <state x="410" y="199" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1682503091191">
