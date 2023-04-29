@@ -6,7 +6,8 @@ const defaultProps = {
 }
 
 //测试
-const testProps: ButtonProps = {btnType: 'primary',
+const testProps: ButtonProps = {
+    btnType: 'primary',
     size: 'lg',
     className: 'klass'
 }
