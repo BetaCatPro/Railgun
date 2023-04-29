@@ -1,32 +1,14 @@
 // config
-@import "variables";
+@import 'variables';
 
 //layout
-@import "reboot";
+@import 'reboot';
 
 //mixin
-@import "mixin";
+@import 'mixin';
 
 // animation
-@import "animation";
+@import 'animation';
 
 //Button
-@import "../components/Button/_style.scss";
-
-//Menu
-@import "../components/Menu/_style.scss";
-
-//Icon
-@import "../components/Icon/_style.scss";
-
-//AutoComplete
-@import "../components/AutoComplete/_style.scss";
-
-//Input
-@import "../components/Input/_style.scss";
-
-//Progress
-@import "../components/Progress/_style.scss";
-
-//Progress
-@import "../components/Upload/_style.scss";
+@import '../components/Button/_style.scss';
