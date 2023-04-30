@@ -1,10 +1,20 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
-import './styles/index.scss'
+import { BrowserRouter } from 'react-router-dom'
+
+import './assets/styles/index.scss'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
 
 const root = createRoot(document.getElementById('root') as HTMLElement)
-root.render(<App />)
+
+root.render(
+    <React.StrictMode>
+        {/* history model */}
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+    </React.StrictMode>
+)
 
 serviceWorker.unregister()

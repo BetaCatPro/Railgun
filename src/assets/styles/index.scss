@@ -1,0 +1,40 @@
+// config
+@import 'variables';
+
+//layout
+@import 'reboot';
+
+//mixin
+@import 'mixin';
+
+// animation
+@import 'animation';
+
+//Button
+@import '../../components/Button/style';
+
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .test-context {
+        width: 100vh;
+        box-shadow: 1px 1px 2px 1px #ccc;
+        border-radius: 10px;
+        margin: 20px;
+        padding: 5px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .test-view {
+        width: 100vh;
+        height: 60vh;
+        padding: 20px;
+        border: 1px solid #15af93;
+        border-radius: 10px;
+        box-shadow: 1px 1px 2px 1px rgba(9, 112, 59, 0.2);
+    }
+}

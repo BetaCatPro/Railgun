@@ -38,6 +38,12 @@ module.exports = {
             }
         ],
         'react/display-name': ['off'],
-        'react/prop-types': ['off']
+        'react/prop-types': ['off'],
+        'prettier/prettier': [
+            'warn',
+             {
+                singleQuote: true
+             }
+         ]
     }
 }
