@@ -41,9 +41,9 @@ module.exports = {
         'react/prop-types': ['off'],
         'prettier/prettier': [
             'warn',
-             {
+            {
                 singleQuote: true
-             }
-         ]
+            }
+        ]
     }
 }

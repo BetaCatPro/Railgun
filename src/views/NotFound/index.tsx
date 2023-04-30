@@ -1,9 +1,5 @@
-import React from "react"
+import React from 'react'
 
 export default () => {
-    return (
-        <div>
-            404 page
-        </div>
-    )
+    return <div>404 page</div>
 }

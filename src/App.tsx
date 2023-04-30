@@ -6,16 +6,16 @@ import NotFound from './views/NotFound'
 
 function App() {
     return (
-        <div className='App'>
-            <div className='test-context'>
+        <div className="App">
+            <div className="test-context">
                 <Link to="/button">Button 测试</Link>
             </div>
 
-            <div className='test-view'>
+            <div className="test-view">
                 <Routes>
-                    <Route path='/' element={<ButtonTest />} />
-                    <Route path='/button' element={<ButtonTest />} />
-                    <Route path='*' element={<NotFound />} />
+                    <Route path="/" element={<ButtonTest />} />
+                    <Route path="/button" element={<ButtonTest />} />
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
             </div>
         </div>
