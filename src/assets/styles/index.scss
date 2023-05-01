@@ -1,20 +1,23 @@
 // config
-@import url('variables');
+@import 'variables';
 
 //layout
-@import url('reboot');
+@import 'reboot';
 
 //mixin
-@import url('mixin');
+@import 'mixin';
 
 // animation
-@import url('animation');
+@import 'animation';
 
-//Button
-@import url('../../components/Button/style');
+// Button
+@import '../../components/Button/style';
 
-//Menu
-@import url('../../components/Menu/style');
+// Menu
+@import '../../components/Menu/style';
+
+// icon
+@import '../../components/Icon/style';
 
 .App {
     display: flex;
@@ -38,6 +41,6 @@
         padding: 20px;
         border: 1px solid #15af93;
         border-radius: 10px;
-        box-shadow: 1px 1px 2px 1px rgb(9 112 59 / 20%);
+        box-shadow: 1px 1px 2px 1px rgba(20, 134, 228, 0.2);
     }
 }
