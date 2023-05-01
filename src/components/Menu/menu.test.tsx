@@ -46,7 +46,7 @@ const generateMenu = (props: MenuProps) => {
     )
 }
 const createStyleFile = () => {
-    const cssFile: string = `
+    const cssFile = `
     .railgun-submenu {
       display: none;
     }
