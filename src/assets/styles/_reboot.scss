@@ -58,7 +58,7 @@ body {
 hr {
     margin: $hr-margin-y 0;
     color: $hr-color; // 1
-    background-color: currentColor;
+    background-color: currentcolor;
     border: 0;
     opacity: $hr-opacity;
 }
@@ -85,31 +85,37 @@ hr:not([size]) {
 
 h1 {
     @extend %heading;
+
     font-size: $h1-font-size;
 }
 
 h2 {
     @extend %heading;
+
     font-size: $h2-font-size;
 }
 
 h3 {
     @extend %heading;
+
     font-size: $h3-font-size;
 }
 
 h4 {
     @extend %heading;
+
     font-size: $h4-font-size;
 }
 
 h5 {
     @extend %heading;
+
     font-size: $h5-font-size;
 }
 
 h6 {
     @extend %heading;
+
     font-size: $h6-font-size;
 }
 
@@ -206,6 +212,7 @@ sup {
 sub {
     bottom: -0.25em;
 }
+
 sup {
     top: -0.5em;
 }
