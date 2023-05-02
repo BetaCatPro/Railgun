@@ -21,7 +21,7 @@
     }
 }
 
-.icon-wrapper+.railgun-input-inner {
+.icon-wrapper + .railgun-input-inner {
     padding-right: 35px;
 }
 
@@ -84,18 +84,18 @@
     border-radius: $input-border-radius;
 }
 
-.railgun-input-group-append+.btn {
+.railgun-input-group-append + .btn {
     padding: 0;
     border: 0;
 }
 
-.input-group>.railgun-input-group-prepend,
-.input-group.input-group-append>.railgun-input-inner {
+.input-group > .railgun-input-group-prepend,
+.input-group.input-group-append > .railgun-input-inner {
     @include border-right-radius(0);
 }
 
-.input-group>.railgun-input-group-append,
-.input-group.input-group-prepend>.railgun-input-inner {
+.input-group > .railgun-input-group-append,
+.input-group.input-group-prepend > .railgun-input-inner {
     @include border-left-radius(0);
 }
 
