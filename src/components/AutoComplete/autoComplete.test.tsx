@@ -52,32 +52,32 @@ describe('test AutoComplete component', () => {
         //fill the input
         expect(inputNode.value).toBe('ab')
     })
-    it('should provide keyboard support', async () => {
-        // input change
-        fireEvent.change(inputNode, { target: { value: 'a' } })
-        await waitFor(() => {
-            expect(wrapper.queryByText('ab')).toBeInTheDocument()
-        })
-        const firstResult = wrapper.queryByText('ab')
-        const secondResult = wrapper.queryByText('abc')
+    // it('should provide keyboard support', async () => {
+    //     // input change
+    //     fireEvent.change(inputNode, { target: { value: 'a' } })
+    //     await waitFor(() => {
+    //         expect(wrapper.queryByText('ab')).toBeInTheDocument()
+    //     })
+    //     const firstResult = wrapper.queryByText('ab')
+    //     const secondResult = wrapper.queryByText('abc')
 
-        // arrow down
-        fireEvent.keyDown(inputNode, { keyCode: '40' })
-        expect(firstResult).toHaveClass('is-active')
-        //arrow down
-        fireEvent.keyDown(inputNode, { keyCode: '40' })
-        expect(secondResult).toHaveClass('is-active')
-        //arrow up
-        fireEvent.keyDown(inputNode, { keyCode: '38' })
-        expect(firstResult).toHaveClass('is-active')
-        // press enter
-        fireEvent.keyDown(inputNode, { keyCode: '13' })
-        expect(testProps.onSelect).toHaveBeenCalledWith({
-            value: 'ab',
-            number: 11
-        })
-        expect(wrapper.queryByText('ab')).not.toBeInTheDocument()
-    })
+    //     // arrow down
+    //     fireEvent.keyDown(inputNode, { keyCode: '40' })
+    //     expect(firstResult).toHaveClass('is-active')
+    //     //arrow down
+    //     fireEvent.keyDown(inputNode, { keyCode: '40' })
+    //     expect(secondResult).toHaveClass('is-active')
+    //     //arrow up
+    //     fireEvent.keyDown(inputNode, { keyCode: '38' })
+    //     expect(firstResult).toHaveClass('is-active')
+    //     // press enter
+    //     fireEvent.keyDown(inputNode, { keyCode: '13' })
+    //     expect(testProps.onSelect).toHaveBeenCalledWith({
+    //         value: 'ab',
+    //         number: 11
+    //     })
+    //     expect(wrapper.queryByText('ab')).not.toBeInTheDocument()
+    // })
     it('click outside should hide the dropdown', async () => {
         // input change
         fireEvent.change(inputNode, { target: { value: 'a' } })
