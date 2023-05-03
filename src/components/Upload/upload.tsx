@@ -93,7 +93,7 @@ export const Upload: FC<UploadProps> = (props) => {
         }
     }
     const uploadFiles = (files: FileList) => {
-        let postFiles = Array.from(files)
+        const postFiles = Array.from(files)
         postFiles.forEach((file) => {
             if (!beforeUpload) {
                 post(file)
@@ -110,7 +110,7 @@ export const Upload: FC<UploadProps> = (props) => {
         })
     }
     const post = (file: File) => {
-        let _file: UploadFile = {
+        const _file: UploadFile = {
             uid: Date.now() + 'upload-file',
             status: 'ready',
             name: file.name,
@@ -138,7 +138,7 @@ export const Upload: FC<UploadProps> = (props) => {
                 withCredentials,
                 onUploadProgress: (e) => {
                     if (e.total) {
-                        let percentage =
+                        const percentage =
                             Math.round((e.loaded * 100) / e.total) || 0
                         if (percentage < 100) {
                             updateFileList(_file, {
