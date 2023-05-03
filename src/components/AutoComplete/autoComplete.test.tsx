@@ -62,16 +62,16 @@ describe('test AutoComplete component', () => {
         const secondResult = wrapper.queryByText('abc')
 
         // arrow down
-        fireEvent.keyDown(inputNode, { keyCode: 40 })
+        fireEvent.keyDown(inputNode, { keyCode: '40' })
         expect(firstResult).toHaveClass('is-active')
         //arrow down
-        fireEvent.keyDown(inputNode, { keyCode: 40 })
+        fireEvent.keyDown(inputNode, { keyCode: '40' })
         expect(secondResult).toHaveClass('is-active')
         //arrow up
-        fireEvent.keyDown(inputNode, { keyCode: 38 })
+        fireEvent.keyDown(inputNode, { keyCode: '38' })
         expect(firstResult).toHaveClass('is-active')
         // press enter
-        fireEvent.keyDown(inputNode, { keyCode: 13 })
+        fireEvent.keyDown(inputNode, { keyCode: '13' })
         expect(testProps.onSelect).toHaveBeenCalledWith({
             value: 'ab',
             number: 11
